@@ -1,13 +1,13 @@
 """
 Filename: FK_SMMV.py
 Created on Wednesday 25/05/2022
+Title: Forward Kinematics of Spherical Manipulator - Modern Variant
 Author: Aaron Joshua M. Apolonia
 Team: Group 12-Block C
 """
 
 import numpy as np
 import math
-
 
 a1 = float(input("a1 = "))
 a2 = float(input("a2 = "))
@@ -22,7 +22,6 @@ T2 = (T2/180.0)*np.pi
 DHPT = [[T1, (90.0/180.0)*np.pi, 0, a1],
        [T2+(90.0/180.0)*np.pi, (90.0/180.0)*np.pi, a2, 0],
        [(0.0/180.0)*np.pi, (0.0/180.0)*np.pi,0, a3+d3]]
-
 
 i = 0
 H0_1 = [[np.cos(DHPT[i][0]),-np.sin(DHPT[i][0])*np.cos(DHPT[i][1]),np.sin(DHPT[i][0])*np.sin(DHPT[i][1]),DHPT[i][2]*np.cos(DHPT[i][0])],
@@ -41,7 +40,6 @@ H2_3 = [[np.cos(DHPT[i][0]),-np.sin(DHPT[i][0])*np.cos(DHPT[i][1]),np.sin(DHPT[i
       [np.sin(DHPT[i][0]),np.cos(DHPT[i][0])*np.cos(DHPT[i][1]),-np.cos(DHPT[i][0])*np.sin(DHPT[i][1]),DHPT[i][2]*np.sin(DHPT[i][0])],
       [0,np.sin(DHPT[i][1]),np.cos(DHPT[i][1]),DHPT[i][3]],
       [0,0,0,1]]
-
 
 H0_1 = np.matrix(H0_1)
 H1_2 = np.matrix(H1_2)
