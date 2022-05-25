@@ -3,4 +3,4 @@
 
  Property From Aaron Joshua M. Apolonia
  
- <img src="img/Robotics_Toolbox_for_Python_(Figure_1).png">
+ <img src="img/Robotics_Toolbox_for_Python_(Figure_1).png ">
