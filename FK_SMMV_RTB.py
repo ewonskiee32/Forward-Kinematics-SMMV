@@ -11,9 +11,9 @@ from roboticstoolbox import DHRobot, RevoluteDH, PrismaticDH
 import spatialmath
 from spatialmath import SE3
 
-a1 = float(input("a1 = ")) 
-a2 = float(input("a2 = ")) 
-a3 = float(input("a3 = ")) 
+a1 = float(10) 
+a2 = float(40) 
+a3 = float(40) 
 
 def mm_to_meter(a):
     m = 1000
@@ -23,7 +23,7 @@ a1 = mm_to_meter(a1)
 a2 = mm_to_meter(a2)
 a3 = mm_to_meter(a3)
 
-lm = float(input("lm1 = "))
+lm = float(40)
 lm = mm_to_meter(lm)
 
 Sphe_MV = DHRobot([
@@ -34,9 +34,9 @@ Sphe_MV = DHRobot([
 
 print(Sphe_MV)
 
-T1 = float(input("T1 = ")) 
-T2 = float(input("T2 = ")) 
-d3 = float(input("d3 = ")) 
+T1 = float(45) 
+T2 = float(-20) 
+d3 = float(40) 
 
 T1 = (T1/180.0)*np.pi 
 T2 = (T2/180.0)*np.pi 

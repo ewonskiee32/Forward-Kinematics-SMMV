@@ -11,9 +11,9 @@ import numpy as np
 from roboticstoolbox import DHRobot, RevoluteDH, PrismaticDH
 import matplotlib.pyplot as plt
 
-a1 = float(input("a1 = ")) 
-a2 = float(input("a2 = "))  
-a3 = float(input("a3 = ")) 
+a1 = float(10) 
+a2 = float(40)  
+a3 = float(40) 
 
 def mm_to_meter(a):
     m = 1000 
@@ -23,7 +23,7 @@ a1 = mm_to_meter(a1)
 a2 = mm_to_meter(a2)
 a3 = mm_to_meter(a3)
 
-lm = float(input("lm = ")) 
+lm = float(40) 
 lm = mm_to_meter(lm)
 
 Sphe_MV = DHRobot([

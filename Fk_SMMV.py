@@ -9,12 +9,12 @@ Team: Group 12-Block C
 import numpy as np
 import math
 
-a1 = float(input("a1 = "))
-a2 = float(input("a2 = "))
-a3 = float(input("a3 = "))
-T1 = float(input("T1 = "))
-T2 = float(input("T2 = "))
-d3 = float(input("d3 = "))
+a1 = float(10)
+a2 = float(40)
+a3 = float(40)
+T1 = float(45)
+T2 = float(-20)
+d3 = float(40)
 
 T1= (T1/180.0)*np.pi
 T2 = (T2/180.0)*np.pi   
