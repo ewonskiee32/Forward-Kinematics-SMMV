@@ -47,7 +47,7 @@ H2_3 = np.matrix(H2_3)
 H0_2 = np.dot(H0_1, H1_2)
 H0_3 = np.dot(H0_2, H2_3)
 
-print("Homogeneous Transformation = ")
+print("HTM = ")
 print(np.matrix(np.around(
       H0_3,3)))
 
