@@ -11,9 +11,9 @@ from roboticstoolbox import DHRobot, RevoluteDH, PrismaticDH
 import spatialmath
 from spatialmath import SE3
 
-a1 = float(input("a1 = ")) # For testing, 100 mm
-a2 = float(input("a2 = ")) # For testing, 70 mm
-a3 = float(input("a3 = ")) # For testing, 40 mm
+a1 = float(input("a1 = ")) 
+a2 = float(input("a2 = ")) 
+a3 = float(input("a3 = ")) 
 
 def mm_to_meter(a):
     m = 1000
@@ -34,12 +34,12 @@ Sphe_MV = DHRobot([
 
 print(Sphe_MV)
 
-T1 = float(input("T1 = ")) # For testing, -50 degrees
-T2 = float(input("T2 = ")) # For testing, -20 degrees
-d3 = float(input("d3 = ")) # For testing, 60mm
+T1 = float(input("T1 = ")) 
+T2 = float(input("T2 = ")) 
+d3 = float(input("d3 = ")) 
 
-T1 = (T1/180.0)*np.pi # Theta 1 in radians
-T2 = (T2/180.0)*np.pi # Theta 2 in radians
+T1 = (T1/180.0)*np.pi 
+T2 = (T2/180.0)*np.pi 
 
 FK = Sphe_MV.fkine([T1,T2,d3])
 print('Forward Kinematics = ')
