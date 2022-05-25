@@ -1,5 +1,5 @@
 """
-Filename: FK_SMMV.py
+Filename: Visual_Rep_SMMV_RTB.py
 Created on Wednesday 25/05/2022
 Title: Visual Representation of Spherical Manipulator - MV - Robotics Toolbox
 Author: Aaron Joshua M. Apolonia
@@ -22,7 +22,6 @@ def mm_to_meter(a):
 a1 = mm_to_meter(a1)
 a2 = mm_to_meter(a2)
 a3 = mm_to_meter(a3)
-
 
 lm = float(input("lm = ")) 
 lm = mm_to_meter(lm)

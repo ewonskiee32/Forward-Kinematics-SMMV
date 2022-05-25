@@ -1,5 +1,5 @@
 """
-Filename: FK_SMMV.py
+Filename: FK_SMMV_RTB.py
 Created on Wednesday 25/05/2022
 Title: Forward Kinematics of Spherical Manipulator - MV - Robotics Toolbox
 Author: Aaron Joshua M. Apolonia
