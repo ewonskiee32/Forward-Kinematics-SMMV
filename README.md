@@ -3,4 +3,4 @@
 
  Property From Aaron Joshua M. Apolonia
  
- <img src="img/FK_SMMV.JPG ">
+ <img src="img/FK_SMMV.jpg">
